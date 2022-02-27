@@ -1,27 +1,36 @@
+import { useState } from "react";
+import logo from "./asset/us-deloitte-logo.webp"
+
 export default function Login() {
+  const [user, setUser] = useState({})
+  const handleSubmit = event => {
+    event.preventDefault();
+    console.log(user);
+    window.location.pathname = '/details'
+}
     return (
       <div>
         <h1>Login</h1>
-        <form>
+        <form onSubmit={handleSubmit}>
        <div className="input-container">
-         <label>Name </label>
-         <input type="text" name="uname" required />
+         <input type="text" name="uname" placeholder="Name" required onChange={e => setUser({ ...user, name: e.target.value })} />
         
        </div>
        <div className="input-container">
-         <label>Email </label>
-         <input type="email" name="email" required />
+       
+         <input type="email" name="email" placeholder="Email" required onChange={e => setUser({ ...user, email: e.target.value })}/>
         
        </div>
        <div className="input-container">
-         <label>Password </label>
-         <input type="password" name="pass" required />
+        
+         <input type="password" name="pass" placeholder="Password" required onChange={e => setUser({ ...user, pass: e.target.value })}/>
          
        </div>
        <div className="button-container">
-         <input type="submit" />
+         <input type="submit" style={{ width: '25%'}}  value ="Login" />
        </div>
      </form>
+     <img src= {logo} alt="logo" />
       </div>
     );
   }
