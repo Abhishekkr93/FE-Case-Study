@@ -1,13 +1,13 @@
-import { useState } from "react";
+
 import React from 'react'
-import JsonData from './data.json'
+
 
 
 export default function Details() {
-  const [user, setUser] = useState({})
+ 
   const handleSubmit = event => {
     event.preventDefault();
-    console.log(user);
+   
     window.location.pathname = '/thankyou'
 }
     return (
