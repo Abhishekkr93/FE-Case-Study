@@ -1,4 +1,6 @@
 import { useState } from "react";
+import React from 'react'
+import JsonData from './data.json'
 
 
 export default function Details() {
@@ -10,30 +12,71 @@ export default function Details() {
 }
     return (
       <div>
-        <h1>Details</h1>
+        <h1>Welcome to User Details</h1>
         <form onSubmit={handleSubmit}>
-       <div className="input-container">
+
+{/* 
+function JsonDataDisplay(){
+	const DisplayData=JsonData.map(
+		(info)=>{
+			return(
+				<tr>
+					<td>{info.id}</td>
+					<td>{info.name}</td>
+					<td>{info.city}</td>
+          <td>{info.contact}</td>
+				</tr>
+			)
+		}
+	)
+
+	return(
+		<div>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+					<th>Sr.NO</th>
+					<th>Name</th>
+					<th>City</th>
+          	<th>Contact</th>
+					</tr>
+				</thead>
+				<tbody>
+				
+					
+					{DisplayData}
+					
+				</tbody>
+			</table>
+			
+		</div>
+	)
+}
+
+export default JsonDataDisplay;  */}
+
+       {/* <div className="input-container">
          <label>Name </label>
          <input type="text" name="uname" required onChange={e => setUser({ ...user, name: e.target.value })} />
         
-       </div>
-       <div className="input-container">
+       </div> */}
+       {/* <div className="input-container">
          <label>Email </label>
          <input type="email" name="email" required onChange={e => setUser({ ...user, email: e.target.value })}/>
         
        </div>
        <div className="input-container">
          <label>Contact </label>
-         <input type="number" name="pass" required onChange={e => setUser({ ...user, pass: e.target.value })}/>
+         <input type="Phone number" name="pass" pattern="[7-9]{1}[0-9]{9}" required onChange={e => setUser({ ...user, pass: e.target.value })}/>
          
        </div>
        <div className="input-container">
          <label>Pincode </label>
          <input type="number" name="pass" required onChange={e => setUser({ ...user, pass: e.target.value })}/>
-         
-       </div>
+       </div> */}
+
        <div className="button-container">
-         <input type="submit" name ="login" />
+         <input type="submit" name ="Save" />
        </div>
      </form>
       </div>

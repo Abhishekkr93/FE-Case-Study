@@ -1,0 +1,64 @@
+[
+
+    {
+        "id":1,
+        "name":"Akshit",
+        "city":"Moradabad",
+        "contact" : "8989899090"
+    },
+    
+    {
+        "id":2,
+        "name":"Nikita",
+        "city":"Lucknow",
+        "contact" : "8989899089"
+    },
+    
+    {
+        "id":3,
+        "name":"Deeksha",
+        "city":"Noida",
+        "contact" : "8989899067"
+    },
+    
+    {
+        "id":4,
+        "name":"Ritesh",
+        "city":"Delhi",
+        "contact" : "8989899089"
+    },
+    
+    {
+        "id":5,
+        "name":"Somya",
+        "city":"Gurugram",
+        "contact" : "8989899000"
+    },
+    
+    {
+        "id":6,
+        "name":"Eshika",
+        "city":"Mumbai",
+        "contact" : "8989899068"
+    },
+    {
+        "id":7,
+        "name":"Kalpana",
+        "city":"Rampur",
+        "contact" : "8989899098"
+    },
+    
+    {
+        "id":8,
+        "name":"Parul",
+        "city":"Chandigarh",
+        "contact" : "8989899054"
+    },
+    
+    {
+        "id":9,
+        "name":"Himani",
+        "city":"Dehradun",
+        "contact" : "8989899043"
+    }
+]

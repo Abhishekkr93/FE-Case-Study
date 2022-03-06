@@ -1,21 +1,25 @@
 import { useState } from "react";
-import logo from "./asset/us-deloitte-logo.webp"
+import logo from "./asset/us-deloitte-logo.png"
 
 export default function Login() {
   const [user, setUser] = useState({})
   const handleSubmit = event => {
     event.preventDefault();
     console.log(user);
-    window.location.pathname = '/details'
+    if(user.email === "abhishek.btech.ec18@iiitranchi.ac.in" && user.pass === "Abhi123"){
+    window.location.pathname = '/table'}
+    else{
+      alert("Invalid Credentials")
+    }
 }
     return (
       <div>
-        <h1>Login</h1>
+        <h1> User Login</h1>
         <form onSubmit={handleSubmit}>
-       <div className="input-container">
+       {/* <div className="input-container">
          <input type="text" name="uname" placeholder="Name" required onChange={e => setUser({ ...user, name: e.target.value })} />
         
-       </div>
+       </div> */}
        <div className="input-container">
        
          <input type="email" name="email" placeholder="Email" required onChange={e => setUser({ ...user, email: e.target.value })}/>
@@ -30,7 +34,7 @@ export default function Login() {
          <input type="submit" style={{ width: '25%'}}  value ="Login" />
        </div>
      </form>
-     <img src= {logo} alt="logo" />
+     <img src= {logo} alt="logo" width={"400px"} />
       </div>
     );
   }
