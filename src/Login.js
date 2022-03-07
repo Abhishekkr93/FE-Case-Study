@@ -1,12 +1,11 @@
 import { useState } from "react";
-import logo from "./asset/us-deloitte-logo.png"
 
 export default function Login() {
   const [user, setUser] = useState({})
   const handleSubmit = event => {
     event.preventDefault();
     console.log(user);
-    if(user.email === "abhishek.btech.ec18@iiitranchi.ac.in" && user.pass === "Abhi123"){
+    if(user.email === "abhishek933625@gmail.com" && user.pass === "Abhi123"){
     window.location.pathname = '/table'}
     else{
       alert("Invalid Credentials")
@@ -34,7 +33,10 @@ export default function Login() {
          <input type="submit" style={{ width: '25%'}}  value ="Login" />
        </div>
      </form>
-     <img src= {logo} alt="logo" width={"400px"} />
+   
+     <div class="footer">
+     <p>Made with ❤️ by <a href="https://github.com/Abhishekkr93" title="Abhishek Kumar" target="_blank" class="w3-hover-text-red"> Abhishek Kumar</a></p>
+</div>
       </div>
     );
   }

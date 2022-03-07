@@ -1,10 +1,13 @@
 import { NavLink as Link } from 'react-router-dom';
+import logo from "./asset/us-deloitte-logo.png"
 
 function Home() {
   return (
     <div className="App">
-        <div classname="Navbar">
-    <li>
+        <div classname="navbar">
+        <nav>
+        <ul>
+        <li>
       <Link to="/">Home</Link>
     </li>
     <li>
@@ -16,13 +19,17 @@ function Home() {
     <li>
       <Link to="/Thankyou">Thankyou</Link>
     </li>
+    </ul>
+    </nav>
   </div>
-         <h1>Hello!!!</h1>
-
-
-  <div classname="Footer">
-      <p>   made by abhi</p>
-  </div>
+         <h1>Hello SCNO!!!</h1>
+         <h2>This is Front-End Development Case Study of Deloitte Internship</h2>
+         <h3>Our Facilitators: Saurav Kumar and Navil Saini</h3>
+         <img src= {logo} alt="logo" width={"350px"} />
+         <div class="footer">
+         <p>Made with ❤️ by <a href="https://github.com/Abhishekkr93" title="Abhishek Kumar" target="_blank" class="w3-hover-text-red"> Abhishek Kumar</a></p>
+  
+</div>
 
     </div>
   );
