@@ -51,7 +51,7 @@ function JsonDataDisplay(){
 			<button type="Submit" style={{width:"200px", marginTop:"50px"}}>Submit</button>
 			</form>
 			<div class="footer">
-			<p>Made with ❤️ by <a href="https://github.com/Abhishekkr93" title="Abhishek Kumar" target="_blank" class="w3-hover-text-red"> Abhishek Kumar</a></p>
+			<p>Made with ❤️ by <a href="https://github.com/Abhishekkr93" title="Abhishek Kumar" target="_blank" rel="noreferrer"> Abhishek Kumar</a></p>
 </div>
 		</div>
 
