@@ -27,7 +27,7 @@ function Home() {
          <h3>Our Facilitators: Saurav Kumar and Navil Saini</h3>
          <img src= {logo} alt="logo" width={"350px"} />
          <div class="footer">
-         <p>Made with ❤️ by <a href="https://github.com/Abhishekkr93" title="Abhishek Kumar" target="_blank" rel="noreferrer"> Abhishek Kumar</a></p>
+         <p>Made with ❤️ by  Abhishek Kumar</p>
   
 </div>
 

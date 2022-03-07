@@ -35,7 +35,7 @@ export default function Login() {
      </form>
    
      <div class="footer">
-     <p>Made with ❤️ by <a href="https://github.com/Abhishekkr93" title="Abhishek Kumar" target="_blank" rel="noreferrer"> Abhishek Kumar</a></p>
+     <p>Made with ❤️ by Abhishek Kumar</p>
 </div>
       </div>
     );

@@ -4,7 +4,7 @@ export default function Thankyou() {
         <h1>Thank you!</h1>
 
         <div class="footer">
-        <p>Made with ❤️ by <a href="https://github.com/Abhishekkr93" title="Abhishek Kumar" target="_blank" class="w3-hover-text-red"> Abhishek Kumar</a></p>
+        <p>Made with ❤️ by Abhishek Kumar</p>
 </div>
       </div>
     );
